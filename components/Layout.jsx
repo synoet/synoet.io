@@ -6,9 +6,9 @@ import Navbar from './Navbar';
 
 export default function Layout({children}){
   return (
-    <div className="bg-background">
+    <div className="bg-background min-h-screen">
       <Head>
-        <title>teo</title>
+        <title>teo nys</title>
         <meta name="description" content="my personal website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -10,24 +10,21 @@ import ArticleCard from '../components/ArticleCard';
 export default function Home() {
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 mx-auto pb-16 min-h-screen">
-        <div className="flex flex-col-reverse sm:flex-row items-start">
-          <div className="flex flex-col pr-8">
-            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 mx-auto pb-16">
+        <div className="flex flex-col sm:flex-row items-start mt-12">
+          <div className="flex flex-col pr-8 gap-2">
+            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-white ">
               Teo Nys 
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-              Computer Scientist at 
-              <span className="font-semibold"> NYU</span>
-              , Software Engineer at
-              <span className="font-semibold"> EPAM</span>
+              Computer Scientist & Software Engineer
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-16">
+            <p className="text-gray-600 dark:text-gray-400 ">
               Passionate about solving problems, and building/desisning tools and software that make people's lives easier.
             </p>
           </div>
         </div>
-        <h3 className="font-bold text-lg md:text-xl tracking-tight  text-black dark:text-white">
+        <h3 className="font-bold text-lg md:text-xl tracking-tight  text-black dark:text-white mt-16">
           TLDR;
         </h3>
         <div className="w-full flex items-center justify-between mt-4 mb-8">
