@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 
+import Footer from './Footer';
+
 export default function Layout({children}){
   return (
     <div className="bg-gray-900">
@@ -11,6 +13,7 @@ export default function Layout({children}){
       </Head>
       <main className="flex flex-col justify-center px-8 bg-gray-900">
         {children}
+        <Footer />
       </main>
     </div>
   );
