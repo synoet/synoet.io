@@ -20,7 +20,7 @@ export default function Home() {
               Computer Scientist & Software Engineer
             </h2>
             <p className="text-gray-600 dark:text-gray-400 ">
-              Passionate about solving problems, and building/desisning tools and software that make people's lives easier.
+              Passionate about solving problems, and building/designing tools and software that make people lives easier.
             </p>
           </div>
         </div>
