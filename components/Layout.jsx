@@ -6,14 +6,14 @@ import Navbar from './Navbar';
 
 export default function Layout({children}){
   return (
-    <div className="bg-gray-900">
+    <div className="bg-background">
       <Head>
         <title>teo</title>
         <meta name="description" content="my personal website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      <main className="flex flex-col justify-center px-8 bg-gray-900">
+      <main className="flex flex-col justify-center px-8 bg-background">
         {children}
         <Footer />
       </main>

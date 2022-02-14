@@ -23,11 +23,29 @@ export default function Home() {
               <span className="font-semibold"> EPAM</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-
+              Passionate about solving problems, and building/desisning tools and software that make people's lives easier.
             </p>
           </div>
         </div>
-        <h3 className="font-bold text-lg md:text-xl tracking-tight mb-6 text-black dark:text-white">
+        <h3 className="font-bold text-lg md:text-xl tracking-tight  text-black dark:text-white">
+          TLDR;
+        </h3>
+        <div className="w-full flex items-center justify-between mt-4 mb-8">
+          <div className="">
+            <h2 className="text-sm text-gray-400">Software Engineer at:</h2>
+            <h1 className="text-lg text-gray-200">EPAM Systems</h1>
+          </div>
+          <div className="">
+            <h2 className="text-sm text-gray-400">Located In:</h2>
+            <h1 className="text-lg text-gray-200">New York City</h1>
+          </div>
+          <div className="">
+            <h2 className="text-sm text-gray-400">Studying at</h2>
+            <h1 className="text-lg text-gray-200">New York University</h1>
+          </div>
+        </div>
+
+        <h3 className="font-bold text-lg md:text-xl tracking-tight mb-6 mt-6 text-black dark:text-white">
           Recent Projects
         </h3>
         <div className="w-full flex gap-3 flex-col md:flex-row">
@@ -60,12 +78,20 @@ export default function Home() {
         <h3 className="font-bold text-lg md:text-xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Recent Articles
         </h3>
-        <ArticleCard
-          index="01"
-          href="https://www.google.com"
-          title="Intro to Docker"
-          length={10}
-        />
+        <div className="w-full flex flex-col gap-4">
+          <ArticleCard
+            index="01"
+            href="https://www.google.com"
+            title="Hello World"
+            length={10}
+          />
+          <ArticleCard
+            index="02"
+            href="https://www.google.com"
+            title="Intro to Docker"
+            length={10}
+          />
+        </div>
         <Link href="/blog">
           <a className="flex mt-8 text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6 items-center">
             See All Articles
