@@ -14,7 +14,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row items-start mt-12">
           <div className="flex flex-col pr-8 gap-2">
             <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-white ">
-              Teo Nys 
+              Teo Nys <span className="text-gray-600">(synoet)</span>
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">
               Computer Scientist & Software Engineer
