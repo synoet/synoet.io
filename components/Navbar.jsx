@@ -34,7 +34,7 @@ export default function Navbar(){
         <div className="flex gap-2 items-center">
           <NavItem href='/' text="Home" />
           <NavItem href='/about' text="About" />
-          <NavItem href='/projects' text="Projects" />
+          <NavItem href='/work' text="Work" />
           <NavItem href='/blog' text="Blog" />
           <NavItem href="/lab" text="Lab" />
         </div>
