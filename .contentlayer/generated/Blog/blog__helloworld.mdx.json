@@ -1,0 +1,26 @@
+{
+  "title": "Hello World",
+  "publishedAt": "2022-02-16",
+  "summary": "",
+  "body": {
+    "raw": "\n# Hello World\n<h1> This is a test</h1>\n",
+    "html": "<h1>Hello World</h1>"
+  },
+  "_id": "blog/helloworld.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/helloworld.mdx",
+    "sourceFileName": "helloworld.mdx",
+    "sourceFileDir": "blog",
+    "contentType": "mdx",
+    "flattenedPath": "blog/helloworld"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.04,
+    "time": 2400,
+    "words": 8
+  },
+  "wordCount": 10,
+  "slug": "helloworld"
+}
