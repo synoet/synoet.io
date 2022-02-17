@@ -26,18 +26,9 @@ var Blog = defineDocumentType(() => ({
   },
   computedFields
 }));
-var OtherPage = defineDocumentType(() => ({
-  name: "OtherPage",
-  filePathPattern: "*.mdx",
-  bodyType: "mdx",
-  fields: {
-    title: { type: "string", required: true }
-  },
-  computedFields
-}));
 var contentLayerConfig = makeSource({
   contentDirPath: "data",
-  documentTypes: [Blog, OtherPage]
+  documentTypes: [Blog]
 });
 var contentlayer_config_default = contentLayerConfig;
 export {

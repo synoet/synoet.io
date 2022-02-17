@@ -1,3 +1,35 @@
 {
-  "cacheItemsMap": {}
+  "cacheItemsMap": {
+    "blog/helloworld.mdx": {
+      "document": {
+        "title": "Hello World",
+        "publishedAt": "2022-02-16",
+        "summary": "",
+        "body": {
+          "raw": "\n### Hello World\nThis is a test\n\n`hello world`\n",
+          "html": "<h3>Hello World</h3>\n<p>This is a test</p>\n<p><code>hello world</code></p>"
+        },
+        "_id": "blog/helloworld.mdx",
+        "_raw": {
+          "sourceFilePath": "blog/helloworld.mdx",
+          "sourceFileName": "helloworld.mdx",
+          "sourceFileDir": "blog",
+          "contentType": "mdx",
+          "flattenedPath": "blog/helloworld"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.045,
+          "time": 2700,
+          "words": 9
+        },
+        "wordCount": 11,
+        "slug": "helloworld"
+      },
+      "documentHash": "1645070333271",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    }
+  }
 }

@@ -22,19 +22,6 @@ export type Blog = {
   readingTime: json
   wordCount: number
   slug: string
-}
-
-export type OtherPage = {
-  /** File path relative to `contentDirPath` */
-  _id: string
-  _raw: Local.RawDocumentData
-  type: 'OtherPage'
-  title: string
-  /** Markdown file body */
-  body: Markdown
-  readingTime: json
-  wordCount: number
-  slug: string
 }  
 
 /** Nested types */
@@ -45,8 +32,8 @@ export type OtherPage = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Blog | OtherPage
-export type DocumentTypeNames = 'Blog' | 'OtherPage'
+export type DocumentTypes = Blog
+export type DocumentTypeNames = 'Blog'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -68,7 +55,6 @@ declare global {
 
 export type DocumentTypeMap = {
   Blog: Blog
-  OtherPage: OtherPage
 }
 
 export type NestedTypeMap = {

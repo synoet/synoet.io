@@ -3,9 +3,7 @@
 export { isType } from 'contentlayer/client'
 
 export * from './allBlogs.mjs'
-export * from './allOtherPages.mjs'
 
 import { allBlogs } from './allBlogs.mjs'
-import { allOtherPages } from './allOtherPages.mjs'
 
-export const allDocuments = [...allBlogs, ...allOtherPages]
+export const allDocuments = [...allBlogs]

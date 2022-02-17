@@ -1,15 +1,11 @@
-import { useMDXComponent } from 'next-contentlayer/hooks';
-import { getTweets } from 'lib/twitter';
-import BlogLayout from 'layouts/blog';
-import { allBlogs } from '.contentlayer/data';
+import BlogPost from '../../templates/BlogPost';
+import {allBlogs} from '../../.contentlayer/generated/allBlogs.mjs';
 
 export default function Post({ post }) {
-  const Component = useMDXComponent(post.body.code);
-
   return (
-    <BlogLayout post={post}>
-      <Component />
-    </BlogLayout>
+    <BlogPost post={post}>
+      <div dangerouslySetInnerHTML={{__html: post.body.html}} />
+    </BlogPost>
   );
 }
 
@@ -22,7 +18,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const post = allBlogs.find((post) => post.slug === params.slug);
-  const tweets = await getTweets(post.tweetIds);
 
-  return { props: { post, tweets } };
+  return { props: { post} };
 }
