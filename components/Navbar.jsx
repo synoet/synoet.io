@@ -35,7 +35,7 @@ export default function Navbar(){
           <NavItem href='/' text="Home" />
           <NavItem href='/about' text="About" />
           <NavItem href='/projects' text="Projects" />
-          <NavItem href='/articles' text="Articles" />
+          <NavItem href='/blog' text="Blog" />
           <NavItem href="/lab" text="Lab" />
         </div>
       </div>

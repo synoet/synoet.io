@@ -5,7 +5,7 @@ export default function About(){
   return (
     <Layout>
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 mx-auto pb-16">
-        <div className="flex flex-col sm:flex-row items-start mt-12">
+        <div className="flex flex-col sm:flex-row items-start mt-16">
           <div className="flex flex-col pr-8 gap-2">
             <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-white ">
               About Me 

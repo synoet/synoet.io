@@ -6,8 +6,6 @@ export default function ArticleCard({ href, length, title, index }) {
       className="w-full"
       href={href}
       aria-label={title}
-      target="_blank"
-      rel="noopener noreferrer"
     >
       <div className="w-full border p-4 rounded-sm border-gray-700 py-3 transform hover:scale-[1.01] hover:border-purple transition-all">
         <div className="flex flex-col sm:flex-row justify-between items-center">
@@ -22,7 +20,7 @@ export default function ArticleCard({ href, length, title, index }) {
           <div className="flex items-center mt-2 sm:mt-0 w-full gap-3 sm:w-auto">
             <Clock size={14} className="text-gray-400"/>
             <p className="text-gray-400 text-left sm:text-right">
-              {length} min
+              {length}
             </p>
           </div>
           <ArrowRight  className="text-gray-300"/>
