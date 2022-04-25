@@ -14,7 +14,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row items-start mt-16">
           <div className="flex flex-col pr-8 gap-2">
             <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-white ">
-              Teo Nys <span className="text-gray-600">(synoet)</span>
+              teo <span className="text-gray-600">[synoet]</span>
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">
               Computer Scientist & Software Engineer
@@ -48,21 +48,15 @@ export default function Home() {
         <div className="w-full flex gap-3 flex-col md:flex-row">
           <ProjectCard
             title="Anubis LMS"
-            description="A Distributed Learning Management System"
+            description="A Distributed Learning Management System for Computer Science Students"
             link="https://www.google.com"
-            stars={90}
+            stars={176}
           />
           <ProjectCard
             title="Davinci"
-            description="AI inline completions for vscode"
+            description="Tools to analyze AI Code completions on developer productivity"
             link="https://www.google.com"
-            stars={3}
-          />
-          <ProjectCard
-            title="Filestore"
-            description="store files in dynamodb, with serverless"
-            link="https://www.google.com"
-            stars={1}
+            stars={7}
           />
         </div>
 

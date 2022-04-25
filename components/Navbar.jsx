@@ -13,7 +13,7 @@ function NavItem({ href, text }) {
       <a
         className={cn(
           isActive
-            ? 'font-semibold text-purple '
+            ? 'font-semibold text-orange '
             : 'font-normal text-gray-400',
           'hidden md:inline-block p-1 sm:px-3 sm:py-2 hover:text-gray-200 transition-all'
         )}
@@ -29,7 +29,7 @@ export default function Navbar(){
     <div className="flex flex-col justify-center items-center pb-4 pt-4">
       <div className="flex w-full justify-between max-w-2xl items-center">
         <div>
-          <Box size={24} className="text-green" />
+          <Box size={24} className="text-orange" />
         </div>
         <div className="flex gap-2 items-center">
           <NavItem href='/' text="Home" />

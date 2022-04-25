@@ -3,18 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Fira Code Regular';
+  font-family: 'JetBrains Mono', monospace;
   font-style: normal;
   font-weight: 100, 200, 300 , 400,  900;
-  font-display: optional;
-  src: url(/fonts/FiraCode-Regular.woff2) format('woff2');
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:  Fira Code Regular
+  font-family: JetBrains Mono, monospace;
 }
 
 a {
