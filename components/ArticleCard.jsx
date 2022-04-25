@@ -7,7 +7,7 @@ export default function ArticleCard({ href, length, title, index }) {
       href={href}
       aria-label={title}
     >
-      <div className="w-full border p-4 rounded-sm border-gray-700 py-3 transform hover:scale-[1.01] hover:border-purple transition-all">
+      <div className="w-full border p-4 rounded-sm border-gray-700 py-3 transform hover:scale-[1.01] hover:border-orange transition-all">
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center">
             <div className="text-gray-400 text-left mr-6">

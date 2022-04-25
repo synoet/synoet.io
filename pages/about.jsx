@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
-import Image from 'next/image';
+import {ChevronsRight} from 'react-feather';
+import Link from 'next/link';
 
 export default function About(){
   return (
@@ -35,6 +36,8 @@ export default function About(){
               However I love to explore different languages and tools, I also have frequently used c & python.
               I am currently learning Rust in my free time.
             </p>
+            <Link href="/work"><p className="text-orange flex items-center font-bold cursor-pointer hover:opacity-80"> 
+              <ChevronsRight size={20}/>Learn More</p></Link>
             <h2 className="text-xl text-gray-200 mt-10">
               Free Time
             </h2>

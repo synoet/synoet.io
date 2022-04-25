@@ -16,15 +16,15 @@ export default function Home() {
             <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-white ">
               teo <span className="text-gray-600">[synoet]</span>
             </h1>
-            <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+            <h2 className="text-gray-200 mb-4">
               Computer Scientist & Software Engineer
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 ">
+            <p className="text-gray-400 ">
               Passionate about solving problems, and building/designing tools and software that make people lives easier.
             </p>
           </div>
         </div>
-        <h3 className="font-bold text-lg md:text-xl tracking-tight  text-black dark:text-white mt-16">
+        <h3 className="font-bold text-lg md:text-xl tracking-tight text-white mt-16">
           TLDR;
         </h3>
         <div className="w-full flex items-center justify-between mt-4 mb-8">
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </div>
 
-        <h3 className="font-bold text-lg md:text-xl tracking-tight mb-6 mt-6 text-black dark:text-white">
+        <h3 className="font-bold text-lg md:text-xl tracking-tight mb-6 mt-6 text-white">
           Recent Projects
         </h3>
         <div className="w-full flex gap-3 flex-col md:flex-row">
@@ -60,13 +60,7 @@ export default function Home() {
           />
         </div>
 
-        <Link href="/blog">
-          <a className="flex mt-8 text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6 items-center">
-            See All Projects
-            <ArrowRight size={16} className="ml-2"/>
-          </a>
-        </Link>
-        <h3 className="font-bold text-lg md:text-xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+        <h3 className="font-bold text-lg md:text-xl tracking-tight mb-4 mt-16 text-black text-white">
           Recent Articles
         </h3>
         <div className="w-full flex flex-col gap-4">
@@ -84,7 +78,7 @@ export default function Home() {
           />
         </div>
         <Link href="/blog">
-          <a className="flex mt-8 text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6 items-center">
+          <a className="flex mt-8 text-gray-400 leading-7 rounded-lg hover:text-gray-200 transition-all h-6 items-center">
             See All Articles
             <ArrowRight size={16} className="ml-2"/>
           </a>
