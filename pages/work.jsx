@@ -38,10 +38,10 @@ export default function Work(){
 
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 mx-auto pb-16">
-        <h1 className="mt-16 text-5xl text-gray-300">Work</h1>
+      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 mx-auto pb-16 w-full">
+        <h1 className="mt-16 text-5xl text-gray-200 font-bold">Work</h1>
         <p className="text-gray-300 mt-4">Work Experience, Education, Languages, Tools</p>
-        <h2 className="text-3xl text-gray-300 mt-6 font-bold">Positions</h2>
+        <h2 className="text-3xl text-gray-300 mt-12 font-bold">Positions</h2>
         <p className="text-gray-400 flex items-center gap-2 mt-4"><Activity size={20} className="text-orange"/> means currently active</p>
         <div className="flex flex-col gap-4 w-full mt-6">
           {positions && positions.map((position, index) => (
@@ -54,7 +54,7 @@ export default function Work(){
             />
           ))}
         </div>
-        <h2 className="text-3xl text-gray-300 mt-8 font-bold">Education</h2>
+        <h2 className="text-3xl text-gray-300 mt-12 font-bold">Education</h2>
         <div className="flex flex-col w-full mt-6">
           <Position
             title={"Bachelor of Computer Science"} 
@@ -64,28 +64,89 @@ export default function Work(){
           />
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-300 mt-8">Knowledge</h2>
-        <p className="text-gray-400 flex items-center gap-2 mt-6"><Star className="text-gray-300" size={17}/>Profficiency from [beginner, advanced]</p>
+        <h2 className="text-3xl font-bold text-gray-300 mt-14">Knowledge</h2>
+        <p className="text-gray-400 flex items-center gap-2 mt-8"><Star className="text-gray-300" size={17}/>Profficiency from [beginner, advanced]</p>
         <p className="text-gray-400 flex items-center gap-2 mt-2"><Award className="text-orange" size={17}/>Primary Skill</p>
-        <h3 className ="text-xl text-gray-300 mt-8">Technologies</h3>
-        <div className="flex flex-col gap-4 mt-2 w-full grid grid-cols-2">
+        <h3 className ="text-xl text-gray-300 mt-10">Concepts</h3>
+        <div className="flex flex-col gap-6 mt-2 w-full grid grid-cols-2">
+          {concepts.map((skill) => (
+            <Skill key={skill.name} {... skill} />
+          ))}
+        </div>
+
+        <h3 className ="text-xl text-gray-300 mt-10">Technologies</h3>
+        <div className="flex flex-col gap-6 mt-2 w-full grid grid-cols-2">
           {languages.map((skill) => (
             <Skill key={skill.name} {... skill} />
           ))}
         </div>
 
-        <h3 className ="text-xl text-gray-300 mt-8">Libraries / Frameworks</h3>
-        <div className="flex flex-col gap-4 mt-2 w-full grid grid-cols-2">
+        <h3 className ="text-xl text-gray-300 mt-10">Libraries / Frameworks</h3>
+        <div className="flex flex-col gap-4 mt-6 w-full grid grid-cols-2">
           {libs.map((skill) => (
             <Skill key={skill.name} {... skill} />
           ))}
         </div>
+
+
+        <h3 className ="text-xl text-gray-300 mt-10">Tools</h3>
+        <div className="flex flex-col gap-4 mt-6 w-full grid grid-cols-2">
+          {tools.map((skill) => (
+            <Skill key={skill.name} {... skill} />
+          ))}
+        </div>
+
 
         
       </div>
     </Layout>
   )
 }
+
+const concepts = [
+  {
+    name: "FE Development",
+    rating: 4,
+    isPrimary: true,
+  },
+  {
+    name: "API Development",
+    rating: 4,
+    isPrimary: true,
+  },
+  {
+    name: "OOP",
+    rating: 4,
+  },
+  {
+    name: "FP",
+    rating: 3,
+  },
+  {
+    name: "Agile/Scrum",
+    rating: 3,
+  },
+  {
+    name: "Unit Testing",
+    rating: 5
+  },
+  {
+    name: "E2E Testing",
+    rating: 3,
+  },
+  {
+    name: "Devops",
+    rating: 3,
+  },
+  {
+    name: "Version Control",
+    rating: 4,
+  },
+  {
+    name: "Infra",
+    rating: 3,
+  }
+]
 
 const languages = [
   {
@@ -124,22 +185,18 @@ const libs = [
   {
     name: "Redux",
     rating: 4,
-    isPrimary: false,
   },
   {
     name: "Nextjs",
     rating: 4,
-    isPrimary: false,
   },
   {
     name: "Express Js",
     rating: 4,
-    isPrimary: false,
   },
   {
     name: "Prisma/TypeORM",
     rating: 4,
-    isPrimary: false,
   },
   {
     name: "Nodejs",
@@ -149,40 +206,77 @@ const libs = [
   {
     name: "FastAPI",
     rating: 2,
-    isPrimary: false,
   },
   {
     name: "Flask",
     rating: 3,
-    isPrimary: false,
   },
   {
     name: "Jest",
     rating: 4,
-    isPrimary: false,
   },
   {
     name: "Mocha",
     rating: 4,
-    isPrimary: false,
   },
   {
     name: "Serverless Framework",
     rating: 3,
-    isPrimary: false,
   },
   {
     name: "Cypress",
     rating: 3,
-    isPrimary: false,
   }
+]
+
+const tools = [
+  {
+    name: "git",
+    rating: 5,
+  },
+  {
+    name: "docker",
+    rating: 4,
+  },
+  {
+    name: "docker-compose",
+    rating: 3,
+  },
+  {
+    name: "serverless",
+    rating: 3,
+  },
+  {
+    name: "postgres",
+    rating: 3,
+  },
+  {
+    name: "redis",
+    rating: 3,
+  },
+  {
+    name: "mysql",
+    rating: 4,
+  },
+  {
+    name: "mongo",
+    rating: 3,
+  },
+  {
+    name: "aws",
+    rating: 3,
+  },
+  {
+    name: "kubernetes",
+    rating: 2 
+  },
 ]
 
 const positions = [
   {
     title: "Software Engineer",
     company: "Epam Systems",
-    dateRange: "June 2021 - Present",
+    dateRange: "Jun 2021 - Present",
     active: true,
   },
   {
@@ -194,19 +288,19 @@ const positions = [
   {
     title: "Researcher",
     company: "New York University",
-    dateRange: "January 2022 - Present",
+    dateRange: "Jan 2022 - Present",
     active: true,
   },
   {
     title: "Maintainer",
     company: "AnubisLMS",
-    dateRange: "June 2021 - Present",
+    dateRange: "Jun 2021 - Present",
     active: true,
   },
   {
     title: "Jr Software Engineer",
     company: "Epam Systems",
-    dateRange: "November 2021 - June 2021",
+    dateRange: "Nov 2021 - Jun 2021",
     active: false,
   },
   {

@@ -13,19 +13,18 @@ export default function About(){
             <h2 className="text-xl text-gray-200 mt-4">
               Backstory 
             </h2>
-            <p className="text-gray-400 ">
-              Hello My name is Teo Nys, I am a 21 year old programmer currently based in New York City.
-              I have had a passion for programming and technology since middle school, and live on the small eureka moments I get when solving a problem.
-              I am currently pursuing my Bachelor of Science In Computer Science from New York University.
-              I am also working as a Software Engineer at EPAM Systems building out microservices aswell as beautiful and fast applications.
+            <p className="text-gray-400 flex flex-col gap-4">
+              <span>Hello My name is Teo Nys, I am a 21 year old programmer currently based in New York City.</span>
+              <span>I have had a passion for programming and technology since middle school, and live on the small eureka moments I get when solving a problem.</span>
+              <span>I am currently pursuing my Bachelor of Science In Computer Science from New York University.
+              I am also working as a Software Engineer at EPAM Systems building out microservices aswell as beautiful and fast applications.</span>
             </p>
-            <h2 className="text-xl text-gray-200 mt-4">
+            <h2 className="text-xl text-gray-200 mt-10">
               Development
             </h2>
             <p className="text-gray-400 ">
               I started my professional journey at the begginning of college, working mostly on front-end projects.
               Since then I have had the wonderful opportunity to work on alot of different production applications.
-              Ive worked as a DevOps Engineer, MicroServices Developer, and Full Stack Engineer.
             </p>
             <p className="text-gray-400 mt-3 ">
               More recently I learned that my passion lies in building tools for myself and other engineers.
@@ -36,19 +35,19 @@ export default function About(){
               However I love to explore different languages and tools, I also have frequently used c & python.
               I am currently learning Rust in my free time.
             </p>
-            <h2 className="text-xl text-gray-200 mt-4">
+            <h2 className="text-xl text-gray-200 mt-10">
               Free Time
             </h2>
             <p className="text-gray-400 ">
               When Im not working I enjoy playing and walking my dog Korra, aswell as reading and playing chess.
             </p>
-            <h2 className="text-xl text-gray-200 mt-4">
+            <h2 className="text-xl text-gray-200 mt-10">
               Languages
             </h2>
             <p className="text-gray-400 ">
               I speak English, Russian, and German fluently. Though recently german not so much.
             </p>
-            <h2 className="text-xl text-gray-200 mt-4">
+            <h2 className="text-xl text-gray-200 mt-10">
               My Dev Environment
             </h2>
             <p className="text-gray-300/80 ">
@@ -63,11 +62,7 @@ export default function About(){
             <p className="text-gray-400 ">
              <span className="text-gray-500">Editor:</span> Neovim + Telescope + TreeSitter + Lsp (lua)
             </p>
-            <p className="text-gray-400 ">
-              <span className="text-gray-500">Colorscheme:</span>Dracula
-            </p>
-            <Image src="/static/images/dev.png" width="900px" height='500px' className="w-full" alt="picture of setup"/>
-            <h2 className="text-xl text-gray-200 mt-4">
+            <h2 className="text-xl text-gray-200 mt-10">
               Hardware
             </h2>
             <p className="text-gray-300/80 ">
@@ -77,7 +72,7 @@ export default function About(){
               <span className="text-gray-500">Laptop:</span> Razer 14 2021, 3070
             </p>
             <p className="text-gray-400 ">
-              <span className="text-gray-500">Monitor:</span> Aorus 32in 4k 144hz IPS
+              <span className="text-gray-500">Monitor:</span> Aorus 32in 4k 144hz IPS, Aorus 27in 2k 144hz IPS
             </p>
             <p className="text-gray-400 ">
               <span className="text-gray-500">Keyboard:</span> GMMK Pro, Milky Yellow and sometimes Kinesis Advantage 2 
