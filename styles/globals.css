@@ -2,17 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'JetBrains Mono', monospace;
-  font-style: normal;
-  font-weight: 100, 200, 300 , 400,  900;
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: JetBrains Mono, monospace;
 }
 
 a {

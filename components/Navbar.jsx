@@ -1,8 +1,9 @@
 import cn from 'classnames';
 
 import NextLink from 'next/link';
+import Image from 'next/image';
 import {useRouter} from 'next/router';
-import {Box} from 'react-feather';
+import {Zap} from 'react-feather';
 
 function NavItem({ href, text }) {
   const router = useRouter();
@@ -13,9 +14,9 @@ function NavItem({ href, text }) {
       <a
         className={cn(
           isActive
-            ? 'font-semibold text-orange '
+            ? 'font-semibold text-white font-semibold'
             : 'font-normal text-gray-400',
-          'hidden md:inline-block p-1 sm:px-3 sm:py-2 hover:text-gray-200 transition-all'
+          'hidden md:inline-block p-1 sm:px-3 sm:py-2 hover:bg-neutral-700/50 rounded-md'
         )}
       >
         <span>{text}</span>
@@ -28,9 +29,9 @@ export default function Navbar(){
   return (
     <div className="flex flex-col justify-center items-center pb-4 pt-4">
       <div className="flex w-full justify-between max-w-2xl items-center">
-        <div>
-          <Box size={24} className="text-orange" />
-        </div>
+        <NextLink href={"/"}>
+          <Image className="cursor-pointer hover:animate-pulse" width={25} height={25} src='/static/images/LogoWhite.svg'/>
+        </NextLink>
         <div className="flex gap-2 items-center">
           <NavItem href='/' text="Home" />
           <NavItem href='/about' text="About" />
