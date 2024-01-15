@@ -1,11 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
-
-import {ArrowRight} from 'react-feather';
-
 import Layout from '../components/Layout';
-import ProjectCard from '../components/ProjectCard';
-import ArticleCard from '../components/ArticleCard';
 import Branding from '../components/Branding';
 import TLDR from '../components/TLDR';
 import Projects from '../components/Projects';

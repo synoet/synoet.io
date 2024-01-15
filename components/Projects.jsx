@@ -1,19 +1,22 @@
 import React from 'react';
 import Link from 'next/link'
 
-import {GitHub} from 'react-feather'
-
 const projects = [
+  {
+    title: "cdwe",
+    description: "configurable cd wrapper that lets you define your environment per directory.",
+    link: "https://github.com/synoet/cdwe"
+  },
+  {
+    title: "ballast",
+    description: "a simple api load testing tool that lets you compare performance snapshots of your api.",
+    link: "https://github.com/synoet/ballast"
+  },
   {
     title: "Anubis LMS",
     description: "A Distributed Learning Management System for Computer Science Students",
     link: "https://github.com/AnubisLMS/Anubis"
   },
-  {
-    title: "Pincer",
-    description: "Tool set powering telemetry and completion from openai codex completions",
-    link: "https://github.com/synoet/pincer"
-  }
 ]
 
 const Project = ({title, description, link}) => {

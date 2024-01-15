@@ -34,10 +34,7 @@ export default function Navbar(){
         </NextLink>
         <div className="flex gap-2 items-center">
           <NavItem href='/' text="Home" />
-          <NavItem href='/about' text="About" />
-          <NavItem href='/work' text="Work" />
           <NavItem href='/blog' text="Blog" />
-          <NavItem href="/lab" text="Lab" />
         </div>
       </div>
     </div>

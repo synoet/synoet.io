@@ -9,15 +9,15 @@ const TLDR = () => {
       <div className="w-full flex items-center justify-between mt-4">
         <div className="">
           <h2 className="text-sm text-gray-500">Software Engineer at:</h2>
-          <h1 className="font-bold text-lg text-gray-400">Kona</h1>
+          <h1 className="font-bold text-lg text-gray-400">Macro</h1>
         </div>
         <div className="">
           <h2 className="text-sm text-gray-500">Located In:</h2>
           <h1 className="font-bold text-lg text-gray-400">New York City</h1>
         </div>
         <div className="">
-          <h2 className="text-sm text-gray-500">Studying at</h2>
-          <h1 className="font-bold text-lg text-gray-400">New York University</h1>
+          <h2 className="text-sm text-gray-500">Hacking On:</h2>
+          <h1 className="font-bold text-lg text-gray-400">Ballast</h1>
         </div>
       </div>
 
