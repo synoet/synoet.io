@@ -1,5 +1,6 @@
 {
-  "name": "oet.dev",
+  "name": "synoet.io",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,20 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
-    "contentlayer": "^0.1.1",
-    "next": "12.0.10",
-    "next-contentlayer": "^0.1.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-feather": "^2.0.9",
-    "reading-time": "^1.5.0"
+    "geist": "^1.2.1",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10",
-    "postcss": "^8.4.6",
-    "tailwindcss": "^3.0.22"
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
   }
 }
